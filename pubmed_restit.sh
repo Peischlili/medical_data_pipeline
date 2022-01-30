@@ -10,7 +10,6 @@ cp pubmed_restitution.py tempdir/.
 echo "FROM python" > tempdir/Dockerfile
 echo "RUN pip3 install pandas" >> tempdir/Dockerfile
 echo "RUN pip3 install json" >> tempdir/Dockerfile
-echo "COPY  ./data /home/med_project/data/" >> tempdir/Dockerfile
 echo "COPY  pubmed_restitution.py /home/med_project/" >> tempdir/Dockerfile
 echo "EXPOSE 5050" >> tempdir/Dockerfile
 echo "CMD python3 /home/med_project/pubmed_restitution.py" >> tempdir/Dockerfile
