@@ -20,7 +20,7 @@ cd tempdir
 docker build -t pubmed_restit .
 
 #lancement du container  testrunning avec l'image testapp
-docker run -t -d -p 5050:5050 --name test_restit pubmed_restit
+docker run -t -d -p 5050:5050 --name ctn_restit pubmed_restit
 
 #Tester si le container a bien démarré
 docker ps -a
