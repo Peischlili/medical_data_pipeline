@@ -15,6 +15,7 @@ echo "RUN pip3 install pandas" >> tempdir/Dockerfile
 echo "RUN pip3 install json" >> tempdir/Dockerfile
 echo "RUN pip3 install re" >> tempdir/Dockerfile
 echo "RUN pip3 install sys" >> tempdir/Dockerfile
+echo "COPY  ./data /home/med_project/data/" >> tempdir/Dockerfile
 echo "COPY  pubmed_restitution.py /home/med_project/" >> tempdir/Dockerfile
 echo "COPY  components.py /home/med_project/" >> tempdir/Dockerfile
 echo "COPY  processing_fct.py /home/med_project/" >> tempdir/Dockerfile
