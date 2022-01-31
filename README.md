@@ -3,19 +3,18 @@
 
 
 ## Introduction
-Ce projet est un exercice de data processing sur des données médicales conçu pour le déploiment dans un data pipeline avec possibilité d'être intégré dans un orchestrateur de jobs (de type DAG).
+Ce projet est un exercice de data processing sur des données médicales, conçu pour le déploiment dans un data pipeline avec possibilité d'être intégré dans un orchestrateur de jobs type DAG.
 
 
 
 ## Méthodologies
 #### Objectif de l'exercice
-Concevoir un data pipeline pour le nettoyage, la standardisation et le filtrage des données afin de par la suite produire en sortie un unique fichier JSON qui représente un graphe de liaison entre
-les différents médicaments et leurs mentions respectives dans les différentes publications PubMed, les différentes publications scientifiques et enfin les journaux avec la date associée à chacune de ces mentions.
+Concevoir un data pipeline pour le nettoyage, la standardisation et le filtrage des données afin de produire en sortie un unique fichier JSON qui représente un graphe de liaison entre les différents médicaments et leurs mentions respectives dans les différentes publications PubMed, les différentes publications scientifiques et enfin les journaux avec la date associée à chacune de ces mentions.
 
 
 
 #### Etapes de data processing
-Pour ce faire, data pipeline est dégroupe en 2 étapes:
+Pour ce faire, le data pipeline est découpé en 2 étapes:
   * Etape 1: Restitution de données pubmed dans un seul fichier .csv
   * Etape 2: Génération d’une représentation de graphes des 3 tables drugs, clinical trials et pubmed dans un seul fichier .json
 
