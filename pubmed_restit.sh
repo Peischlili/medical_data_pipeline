@@ -22,12 +22,12 @@ echo "COPY  main.py /home/med_project/" >> tempdir/Dockerfile
 echo "EXPOSE 5050" >> tempdir/Dockerfile
 echo "CMD python3 /home/med_project/pubmed_restitution.py" >> tempdir/Dockerfile
 
-# Lancement du build de l'image testapp à partir de Dockerfile sous /tempdir
+# Lancement du build de l'image pubmed_restit à partir de Dockerfile sous /tempdir
 cd tempdir
 docker build -t pubmed_restit .
 
-#lancement du container  testrunning avec l'image testapp
-docker run -t -d -p 5050:5050 --name test_restit pubmed_restit
+# Lancement du container ctn_restit avec l'image pubmed_restit
+docker run -t -d -p 5050:5050 --name ctn_restit pubmed_restit
 
-#Tester si le container a bien démarré
+# Tester si le container a bien démarré
 docker ps -a
