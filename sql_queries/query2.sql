@@ -16,4 +16,3 @@ FROM ventes_type AS V1, ventes_type AS V2
 WHERE V1.client_id = V2.client_id
 	AND V1.product_type in ('MEUBLE')
 	AND V2.product_type in ('DECO')
-
